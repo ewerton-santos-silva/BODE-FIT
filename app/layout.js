@@ -5,15 +5,18 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-    title: "SaaS Saúde e Bem-Estar",
-    description: "Plano adaptativo de exercícios e nutrição.",
+    title: "BODE FIT - Plano Adaptativo",
+    description: "Plano adaptativo de exercícios e nutrição personalizado.",
 };
 
 export default function RootLayout({ children }) {
     return (
         <html lang="pt-BR" suppressHydrationWarning>
-            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-            <link rel="manifest" href="/manifest.json" />
+            <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+                <link rel="manifest" href="/manifest.json" />
+                <meta name="theme-color" content="#16a34a" />
+            </head>
             <body className={`${inter.className} min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 transition-colors`}>
                 <ThemeProvider
                     attribute="class"

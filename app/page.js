@@ -86,11 +86,16 @@ export default function Home() {
                     )}
                 </div>
                 <Card className="w-full max-w-2xl shadow-xl z-10 border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur">
-                    <CardHeader>
-                        <CardTitle className="text-2xl font-bold flex items-center gap-2">
-                            <Activity className="text-primary" /> Bem-vindo(a) ao BODE FIT
+                    <CardHeader className="text-center items-center">
+                        <img
+                            src="/logo.png"
+                            alt="BODE FIT Logo"
+                            className="w-36 h-36 object-contain mb-2 drop-shadow-lg"
+                        />
+                        <CardTitle className="text-3xl font-black uppercase tracking-wider text-primary">
+                            BODE FIT
                         </CardTitle>
-                        <CardDescription>Preencha seus dados biométricos para gerar seu plano adaptativo.</CardDescription>
+                        <CardDescription className="text-base">Preencha seus dados para gerar seu plano adaptativo personalizado.</CardDescription>
                     </CardHeader>
                     <CardContent>
                         <form onSubmit={generatePlan} className="space-y-6">
