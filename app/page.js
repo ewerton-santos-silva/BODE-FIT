@@ -26,6 +26,7 @@ export default function Home() {
 
     const { theme, setTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
+    const [plan, setPlan] = useState(null);
 
     useEffect(() => {
         setMounted(true);
